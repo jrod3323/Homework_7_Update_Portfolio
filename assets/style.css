@@ -1,3 +1,8 @@
+/* Standardized Document CSS */
+
+
+
+/* Header Section */
 /* image for header */
 header{
     background-image: url(./images/pexels-fiona-art-4983550.jpg);
@@ -49,6 +54,7 @@ header{
     text-shadow: 4px 4px #272727;
 }
 
+/* For Navbar */
 .navbar {
     background-color: #7C7B8E;
 }
@@ -60,3 +66,77 @@ header{
 .nav-link {
     color: #5C012C;
 }
+
+/* Social Media Icons */
+.socialIcons{
+    background-color: #7C7B8E;
+    position: absolute;
+    display: flex;
+    bottom: 2%;
+    align-items: center;
+    
+}
+
+i.fab {
+    color: #5C012C;
+    margin: 6px;
+}
+
+.navbar-toggler{
+    background-color:  #5C012C;
+}
+
+/* About Me Section */
+/*                  */
+
+/* section background color */
+#aboutMe{
+    background-color: #D2E8EA ;
+}
+
+/* Card CSS */
+.aboutMeCard{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.aboutMeCardContainer{
+    background-color: #50969c;
+    color: black;
+    box-shadow:4px 4px rgb(179, 177, 177);
+}
+
+/* My Portfolio Section */
+/*                     */
+
+/* section background color */
+
+#myPortfolio{
+    background-color: #B60256 ;
+}
+
+.myPortfolioCard{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.myPortfolioCardContainer{
+    background-color: #5C012C;
+    color: #DEDEE3;
+    box-shadow:4px 4px #790139;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+
+.carousel-caption{
+    opacity: .5;
+    color:black;
+    background-color: rgb(202, 202, 206);
+    width: 20%;
+    border-radius: 7.5%;
+}
+
+
+
