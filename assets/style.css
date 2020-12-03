@@ -48,3 +48,15 @@ header{
     font-family: 'Roboto Slab', serif;
     text-shadow: 4px 4px #272727;
 }
+
+.navbar {
+    background-color: #7C7B8E;
+}
+
+.navbar-brand {
+    color: #5C012C;
+}
+
+.nav-link {
+    color: #5C012C;
+}
