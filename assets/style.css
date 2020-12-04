@@ -106,6 +106,10 @@ i.fab {
     box-shadow:4px 4px rgb(179, 177, 177);
 }
 
+.card-text{
+    height: 400px;
+}
+
 /* My Portfolio Section */
 /*                     */
 
@@ -115,9 +119,28 @@ i.fab {
     background-color: #B60256 ;
 }
 
-.myPortfolioCard{
+/* portfolio accordion */
+
+.accordion1{
     text-align: center;
     font-family: 'Roboto Slab', serif;
+    color: #DEDEE3;
+    box-shadow:4px 4px #790139;
+}
+
+.accordion1 .card-header{
+    background-color: #5C012C;
+    border-color: none;
+}
+
+.portfolioButton{
+    color:#DEDEE3;
+}
+
+/* portfolio card */
+
+.portfolioCardBody{
+    background-color: #5C012C;
 }
 
 .myPortfolioCardContainer{
@@ -126,17 +149,15 @@ i.fab {
     box-shadow:4px 4px #790139;
 }
 
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 100%;
+/* Resume Section */
+
+/* resume section bacground color */
+
+#myResume{
+    background-color: #DEDEE3;
+    text-align: center;
 }
 
-.carousel-caption{
-    opacity: .5;
-    color:black;
-    background-color: rgb(202, 202, 206);
-    width: 20%;
-    border-radius:7.5%;
-}
 
 
 

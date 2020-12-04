@@ -1,3 +1,57 @@
+// Global Variables
+
+var workExpButton = $("#resumeWorkExperience");
+var certificatesButton = $("#resumeCertifications");
+var educationButton = $("#resumeEducation");
+
+var workExpInfo = $(".resumeWorkExperienceInfo");
+var certificatesInfo = $(".resumeCertificationsInfo");
+var educationInfo = $(".resumeEducationInfo");
+
+//Functions
+////////////////////
+
+//Functions for collapsing resume targets
+
+function workExpCollapse(){
+
+    certificatesInfo.removeClass("hide show");
+    educationInfo.removeClass("hide show");
+    workExpInfo.removeClass("hide show");
+    
+    certificatesInfo.addClass("hide");
+    educationInfo.addClass("hide");
+    setTimeout(function(){
+        workExpInfo.addClass("show")
+    },100)
+}
+
+function certificateExpCollapse(){
+
+    certificatesInfo.removeClass("hide show");
+    educationInfo.removeClass("hide show");
+    workExpInfo.removeClass("hide show");
+    
+    workExpInfo.addClass("hide");
+    educationInfo.addClass("hide");
+    setTimeout(function(){
+        certificatesInfo.addClass("show")
+    },100)
+}
+
+function educationExpCollapse(){
+
+    certificatesInfo.removeClass("hide show");
+    educationInfo.removeClass("hide show");
+    workExpInfo.removeClass("hide show");
+    
+    workExpInfo.addClass("hide");
+    certificatesInfo.addClass("hide");
+    setTimeout(function(){
+        educationInfo.addClass("show")
+    },100)
+}
+
 // typwriter effect for header
 
 var TxtType = function(el, toRotate, period) {
@@ -56,3 +110,10 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+//Call Functions
+//////////////////
+
+workExpButton.on("click",workExpCollapse);
+certificatesButton.on("click",certificateExpCollapse);
+educationButton.on("click",educationExpCollapse);
