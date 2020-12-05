@@ -159,6 +159,14 @@ i.fab {
     text-align: center;
 }
 
+/* Contact Me Section */
+
+/* Contact Me Card */
+
+.contactMeCard{
+    text-align: center;
+}
+
 /* Media Queries for additional responsive layout */
 
 @media screen and (max-width: 992px) {
