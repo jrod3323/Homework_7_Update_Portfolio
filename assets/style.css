@@ -118,6 +118,7 @@ i.fab {
 
 #myPortfolio{
     background-color: #B60256 ;
+    font-family: 'Roboto Slab', serif;
 }
 
 /* portfolio accordion */
@@ -126,7 +127,7 @@ i.fab {
     text-align: center;
     font-family: 'Roboto Slab', serif;
     color: #DEDEE3;
-    box-shadow:4px 4px #790139;
+    box-shadow:6px 6px #790139;
 }
 
 .accordion1 .card-header{
@@ -161,10 +162,49 @@ i.fab {
 
 /* Contact Me Section */
 
+/* sections background color */
+
+#contactMe{
+    background-color: #C3A9EF;
+}
+
 /* Contact Me Card */
+
+.contactMeCardContainer{
+    background-color:#7A41DC ;
+    font-family: 'Roboto Slab', serif;
+    border-radius: .5rem;
+    box-shadow: 4px 4px #9E75E6;
+}
 
 .contactMeCard{
     text-align: center;
+}
+
+.contactMeCard h1{
+    color: black;
+}
+
+input{
+    border-radius: .5rem;
+}
+
+textarea {
+    border-radius: .5rem;
+}
+
+.formSubmit{
+    background-color: #C3A9EF;
+    border-color: #C3A9EF;
+}
+.formSubmit:hover{
+    background-color: #5f19d8;
+    border-color: #C3A9EF;
+}
+
+form label{
+    font-size: 1.5rem;
+    color: black;
 }
 
 /* Media Queries for additional responsive layout */
