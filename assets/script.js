@@ -1,4 +1,11 @@
+//////////////////
 // Global Variables
+//////////////////
+
+//For About Me Section
+var aboutMeSlidesContainer =$(".aboutMeSlides")
+
+//For Resume Section
 
 var workExpButton = $("#resumeWorkExperience");
 var certificatesButton = $("#resumeCertifications");
@@ -8,8 +15,65 @@ var workExpInfo = $(".resumeWorkExperienceInfo");
 var certificatesInfo = $(".resumeCertificationsInfo");
 var educationInfo = $(".resumeEducationInfo");
 
+///////////////////
 //Functions
 ////////////////////
+
+//Function for creatining dynamic images divs for About Me Slide Show
+
+function dynamicSlideShow(){
+
+    let images = [
+        {
+            url:"./assets/images/slide2.jpg" ,
+            alt: "Family at UT",
+        },
+        {
+            url:"./assets/images/slide3.jpg" ,
+            alt: "In NOLA",
+        },
+        {
+            url:"./assets/images/slide4.jpg" ,
+            alt: "At Lake Travis",
+        },
+        {
+            url:"./assets/images/slide5.jpg" ,
+            alt: "With Brother",
+        },
+        {
+            url:"./assets/images/slide6.jpg" ,
+            alt: "With Dad and Nephews",
+        },
+        {
+            url:"./assets/images/slide7.jpg" ,
+            alt: "My Puppies",
+        },
+        {
+            url:"./assets/images/slide8.jpg" ,
+            alt: "With Wife at Lake Travis",
+        },
+        {
+            url:"./assets/images/slide9.jpg" ,
+            alt: "With Family in Detroit",
+        },
+        {
+            url:"./assets/images/slide10.jpg" ,
+            alt: "At Big Bend National Park",
+        }
+    ]
+
+    for(var i=0;i<images.length;i++){
+
+        var imgDiv = $("<div>");
+        imgDiv.addClass("carousel-item")
+        var imgEl = $("<img>");
+        imgEl.addClass("d-block mb-4 w-100");
+        imgEl.attr("src",images[i].url).attr("alt",images[i].alt)
+
+        imgDiv.append(imgEl);
+        aboutMeSlidesContainer.append(imgDiv);
+    }
+}
 
 //Functions for collapsing resume targets
 
@@ -51,6 +115,10 @@ function educationExpCollapse(){
         educationInfo.addClass("show")
     },100)
 }
+
+//////////////////
+//For Header
+/////////////////
 
 // typwriter effect for header
 
@@ -111,9 +179,11 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+//////////////////
 //Call Functions
 //////////////////
 
+dynamicSlideShow();
 workExpButton.on("click",workExpCollapse);
 certificatesButton.on("click",certificateExpCollapse);
 educationButton.on("click",educationExpCollapse);
