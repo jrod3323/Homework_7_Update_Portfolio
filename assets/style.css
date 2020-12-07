@@ -75,7 +75,7 @@ header{
     display: flex;
     bottom: 2%;
     align-items: center;
-    
+    border-radius: 1rem;
 }
 
 i.fab {
