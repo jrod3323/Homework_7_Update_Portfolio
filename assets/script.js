@@ -187,3 +187,7 @@ dynamicSlideShow();
 workExpButton.on("click",workExpCollapse);
 certificatesButton.on("click",certificateExpCollapse);
 educationButton.on("click",educationExpCollapse);
+//Collapse nav-menu after clicking on destination in mobile
+$(".nav-link").on("click",function(){
+    $(".navbar-collapse").removeClass("show")
+})
